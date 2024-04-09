@@ -46,3 +46,5 @@ ver_rivales(Equipo) :-
 /*
 findall(Variable_Origen,FUNCION_devuelve_variables,Lista_destino)
 */
+
+equipos_grupo(Grupo):- findall(Equipo, pertenece_grupo(Grupo,Equipo), ListaEquipos), writeln(ListaEquipos).
